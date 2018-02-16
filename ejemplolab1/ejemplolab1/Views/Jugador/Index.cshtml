@@ -1,4 +1,9 @@
-﻿@model IEnumerable<ejemplolab1.Models.Jugador>
+﻿
+
+@model IEnumerable<ejemplolab1.Models.Jugador>
+
+
+
 
 @{
     ViewBag.Title = "Index";
@@ -9,6 +14,29 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<div class="row">
+
+    <h2>Upload File</h2>
+
+    @using (Html.BeginForm("Upload", "Home", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+
+        <div class="form-group">
+            <input type="file" id="dataFile" name="upload" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Upload" class="btn btn-default" />
+        </div>
+
+        if (Model != null)
+        {
+            
+        }
+    }
+</div>
 <table class="table">
     <tr>
         <th>
@@ -49,3 +77,4 @@
 }
 
 </table>
+

@@ -111,5 +111,12 @@ namespace ejemplolab1.Controllers
                 return View();
             }
         }
+
+
+
+        public ActionResult Upload()
+        {
+            return View();
+        }
     }
 }
