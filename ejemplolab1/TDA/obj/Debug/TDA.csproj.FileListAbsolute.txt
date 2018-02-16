@@ -1,0 +1,8 @@
+c:\users\godin\documents\visual studio 2013\Projects\ejemplolab1\TDA\bin\Debug\TDA.dll
+c:\users\godin\documents\visual studio 2013\Projects\ejemplolab1\TDA\bin\Debug\TDA.pdb
+c:\users\godin\documents\visual studio 2013\Projects\ejemplolab1\TDA\obj\Debug\TDA.dll
+c:\users\godin\documents\visual studio 2013\Projects\ejemplolab1\TDA\obj\Debug\TDA.pdb
+C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\bin\Debug\TDA.dll
+C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\bin\Debug\TDA.pdb
+C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\obj\Debug\TDA.dll
+C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\obj\Debug\TDA.pdb
