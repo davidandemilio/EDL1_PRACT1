@@ -17,7 +17,18 @@
 <div class="row">
 
     <h2>Upload File</h2>
+    <div>
 
+        <div class="jumbotron">
+            
+           
+            <p><a href="bnombre" class="btn btn-primary btn-lg">Busqueda por nombre &raquo;</a></p>
+            <p><a href="bapellido" class="btn btn-primary btn-lg">Busqueda por apellido &raquo;</a></p>
+            <p><a href="bposiscion" class="btn btn-primary btn-lg">Busqueda por posiscion &raquo;</a></p>
+            <p><a href="bsalario" class="btn btn-primary btn-lg">Busqueda por salario &raquo;</a></p>
+        </div>
+
+    </div>
     @using (Html.BeginForm("Upload", "Home", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.AntiForgeryToken()
@@ -35,6 +46,12 @@
         {
             
         }
+    }
+
+
+    @using (Html.BeginForm("bnombre","JugadorController",FormMethod.Post))
+    {
+       
     }
 </div>
 <table class="table">
