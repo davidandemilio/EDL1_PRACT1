@@ -6,3 +6,7 @@ C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplola
 C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\bin\Debug\TDA.pdb
 C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\obj\Debug\TDA.dll
 C:\Users\godin\Documents\Landivar\Tercer Semestre\Estructuras de Datos\ejemplolab1\TDA\obj\Debug\TDA.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\TDA\bin\Debug\TDA.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\TDA\bin\Debug\TDA.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\TDA\obj\Debug\TDA.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\TDA\obj\Debug\TDA.pdb
