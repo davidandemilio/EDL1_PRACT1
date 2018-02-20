@@ -6,12 +6,15 @@ using System.Web.Mvc;
 using ejemplolab1.DBContest;
 using ejemplolab1.Models;
 using System.Net;
-
+using System.IO;
+using System.Web.UI.WebControls;
+ 
 namespace ejemplolab1.Controllers
 {
     public class JugadorController : Controller
     {
         DefaultConnection db =  DefaultConnection.getInstance;
+     
         // GET: Jugador
         public ActionResult Index()
         {
@@ -90,6 +93,67 @@ namespace ejemplolab1.Controllers
             }
         }
 
+        public ActionResult CargarArchivo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CargarArchivo(HttpPostedFileBase upload)
+        {
+            try
+            {
+
+                 string filePath = string.Empty;
+                 if (upload != null)
+        {
+            string path = Server.MapPath("~/Uploads/");
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+ 
+            filePath = path + Path.GetFileName(upload.FileName);
+            string extension = Path.GetExtension(upload.FileName);
+            upload.SaveAs(filePath);
+ 
+            //Read the contents of CSV file.
+            string csvData = System.IO.File.ReadAllText(filePath);
+ 
+            //Execute a loop over the rows.
+            foreach (string linea in csvData.Split('\n'))
+            {
+                if (!string.IsNullOrEmpty(linea))
+                {
+                    string[] datos = linea.Split(';', ';', ';');
+
+
+                    Jugador jugadorinsert = new Jugador();
+                    jugadorinsert.nombre = datos[0].ToString();
+                    jugadorinsert.apellido = datos[1].ToString();
+                    jugadorinsert.salario = Convert.ToDouble(datos[2].ToString());
+                    jugadorinsert.posiscion = datos[3].ToString();
+
+                    db.Jugadores.Add(jugadorinsert);
+                }
+            }
+        }
+ 
+      
+
+
+
+
+             }
+            catch (Exception ex)
+            {
+                ViewBag.mensaje = "Se produjo un error : " + ex.Message;
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+          
+        }
+
         // GET: Jugador/Delete/5
         public ActionResult Delete(int id)
         {
@@ -110,13 +174,6 @@ namespace ejemplolab1.Controllers
             {
                 return View();
             }
-        }
-
-
-
-        public ActionResult Upload()
-        {
-            return View();
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿
-
-@model IEnumerable<ejemplolab1.Models.Jugador>
-
-
-
+﻿@model IEnumerable<ejemplolab1.Models.Jugador>
 
 @{
     ViewBag.Title = "Index";
@@ -14,46 +9,6 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<div class="row">
-
-    <h2>Upload File</h2>
-    <div>
-
-        <div class="jumbotron">
-            
-           
-            <p><a href="bnombre" class="btn btn-primary btn-lg">Busqueda por nombre &raquo;</a></p>
-            <p><a href="bapellido" class="btn btn-primary btn-lg">Busqueda por apellido &raquo;</a></p>
-            <p><a href="bposiscion" class="btn btn-primary btn-lg">Busqueda por posiscion &raquo;</a></p>
-            <p><a href="bsalario" class="btn btn-primary btn-lg">Busqueda por salario &raquo;</a></p>
-        </div>
-
-    </div>
-    @using (Html.BeginForm("Upload", "Home", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary()
-
-        <div class="form-group">
-            <input type="file" id="dataFile" name="upload" />
-        </div>
-
-        <div class="form-group">
-            <input type="submit" value="Upload" class="btn btn-default" />
-        </div>
-
-        if (Model != null)
-        {
-            
-        }
-    }
-
-
-    @using (Html.BeginForm("bnombre","JugadorController",FormMethod.Post))
-    {
-       
-    }
-</div>
 <table class="table">
     <tr>
         <th>
@@ -93,5 +48,25 @@
     </tr>
 }
 
+
+
 </table>
+
+
+@using (Html.BeginForm("CargarArchivo", "Jugador", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+  
+  
+    <div class="form-group">
+        <input type="File" id="dataFile" name="upload" />
+    
+
+        <input type="submit" value="Upload" class="btn btn-default" />
+    </div>
+
+
+   
+
+}
 
