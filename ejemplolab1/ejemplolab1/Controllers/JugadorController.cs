@@ -36,7 +36,7 @@ namespace ejemplolab1.Controllers
 
         // POST: Jugador/Create
         [HttpPost]
-        public ActionResult Create([Bind(Include="jugadorid,nombre,apellido,salario,posiscion")]Jugador jugador)
+        public ActionResult Create([Bind(Include="jugadorid,nombre,apellido,salario,posiscion,club")]Jugador jugador)
         {
             try
             {
@@ -71,7 +71,7 @@ namespace ejemplolab1.Controllers
         // POST: Jugador/Edit/5
         [HttpPost]
     [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="jugadorid,nombre,apellido,salario,posiscion")]Jugador jugador)
+        public ActionResult Edit([Bind(Include = "jugadorid,nombre,apellido,salario,posiscion,club")]Jugador jugador)
         {
             try
             {
@@ -119,20 +119,25 @@ namespace ejemplolab1.Controllers
  
             //Read the contents of CSV file.
             string csvData = System.IO.File.ReadAllText(filePath);
- 
+
+
+
+            int cont = db.Jugadores.Count;
             //Execute a loop over the rows.
             foreach (string linea in csvData.Split('\n'))
             {
                 if (!string.IsNullOrEmpty(linea))
                 {
-                    string[] datos = linea.Split(';', ';', ';');
+                    string[] datos = linea.Split(',', ',', ',',',');
 
 
                     Jugador jugadorinsert = new Jugador();
+                    jugadorinsert.jugadorid = ++cont;
                     jugadorinsert.nombre = datos[0].ToString();
                     jugadorinsert.apellido = datos[1].ToString();
                     jugadorinsert.salario = Convert.ToDouble(datos[2].ToString());
                     jugadorinsert.posiscion = datos[3].ToString();
+                    jugadorinsert.club = datos[4].ToString();
 
                     db.Jugadores.Add(jugadorinsert);
                 }

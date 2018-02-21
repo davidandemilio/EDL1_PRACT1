@@ -12,5 +12,6 @@ namespace ejemplolab1.Models
         public string apellido { get; set; }
         public double salario { get; set; }
         public string posiscion { get; set; }
+        public string club { get; set; }
     }
 }
