@@ -91,9 +91,20 @@ namespace ejemplolab1.Controllers
         }
 
         // GET: Jugador/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Jugador jugadorBuscado = db.Jugadores.Find(x => x.jugadorid == id);
+
+            if (jugadorBuscado == null)
+            {
+
+                return HttpNotFound();
+            }
+            return View(jugadorBuscado);
         }
 
         // POST: Jugador/Delete/5
