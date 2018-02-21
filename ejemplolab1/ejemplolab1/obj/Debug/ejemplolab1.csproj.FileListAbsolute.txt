@@ -110,3 +110,31 @@ C:\Users\godin\Documents\Visual Studio 2013\Projects\EDL1_PRACT1\ejemplolab1\eje
 C:\Users\godin\Documents\Visual Studio 2013\Projects\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.csprojResolveAssemblyReference.cache
 C:\Users\godin\Documents\Visual Studio 2013\Projects\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.dll
 C:\Users\godin\Documents\Visual Studio 2013\Projects\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.csprojResolveAssemblyReference.cache
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\obj\Debug\ejemplolab1.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\ejemplolab1.dll.config
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\ejemplolab1.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\ejemplolab1.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\Antlr3.Runtime.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\Newtonsoft.Json.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Helpers.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Mvc.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Optimization.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Razor.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\TDA.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\WebGrease.dll
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\TDA.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Helpers.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Mvc.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Optimization.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.Razor.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\Antlr3.Runtime.pdb
+C:\Users\Luis Emilio\Desktop\Tercer Ciclo\Estructura de Datos\ED\EDL1_PRACT1\ejemplolab1\ejemplolab1\bin\Newtonsoft.Json.xml

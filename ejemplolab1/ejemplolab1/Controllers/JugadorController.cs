@@ -178,6 +178,7 @@ namespace ejemplolab1.Controllers
             try
             {
                 // TODO: Add delete logic here
+                db.Jugadores.Remove(db.Jugadores.First(x => x.jugadorid == id));
 
                 return RedirectToAction("Index");
             }
