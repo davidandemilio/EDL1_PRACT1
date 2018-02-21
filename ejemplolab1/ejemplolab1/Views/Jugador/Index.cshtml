@@ -48,4 +48,25 @@
     </tr>
 }
 
+
+
 </table>
+
+
+@using (Html.BeginForm("CargarArchivo", "Jugador", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+  
+  
+    <div class="form-group">
+        <input type="File" id="dataFile" name="upload" />
+    
+
+        <input type="submit" value="Upload" class="btn btn-default" />
+    </div>
+
+
+   
+
+}
+
