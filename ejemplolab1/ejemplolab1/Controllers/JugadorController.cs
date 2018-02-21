@@ -119,7 +119,7 @@ namespace ejemplolab1.Controllers
  
             //Read the contents of CSV file.
             string csvData = System.IO.File.ReadAllText(filePath);
- 
+            int cont = db.Jugadores.Count;
             //Execute a loop over the rows.
             foreach (string linea in csvData.Split('\n'))
             {
@@ -129,6 +129,7 @@ namespace ejemplolab1.Controllers
 
 
                     Jugador jugadorinsert = new Jugador();
+                    jugadorinsert.jugadorid = ++cont;
                     jugadorinsert.nombre = datos[0].ToString();
                     jugadorinsert.apellido = datos[1].ToString();
                     jugadorinsert.salario = Convert.ToDouble(datos[2].ToString());
