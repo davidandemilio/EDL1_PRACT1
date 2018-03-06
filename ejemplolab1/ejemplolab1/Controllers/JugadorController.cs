@@ -6,9 +6,6 @@ using System.Web.Mvc;
 using ejemplolab1.DBContest;
 using ejemplolab1.Models;
 using System.Net;
-using System.IO;
-using directorios = System.IO;
-
 
 namespace ejemplolab1.Controllers
 {
@@ -36,12 +33,12 @@ namespace ejemplolab1.Controllers
 
         // POST: Jugador/Create
         [HttpPost]
-        public ActionResult Create([Bind(Include="Jugadorid,Nombre,Apellido,Salario,Posicion,Club")]Jugador jugador)
+        public ActionResult Create([Bind(Include="jugadorid,nombre,apellido,salario,posiscion")]Jugador jugador)
         {
             try
             {
                 // TODO: Add insert logic here
-                jugador.Jugadorid = ++db.IDActual;
+                jugador.jugadorid = ++db.IDActual;
                 db.Jugadores.Add(jugador);
                 return RedirectToAction("Index");
             }
@@ -58,7 +55,7 @@ namespace ejemplolab1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Jugador jugadorBuscado = db.Jugadores.Find(x => x.Jugadorid == id);
+            Jugador jugadorBuscado = db.Jugadores.Find(x => x.jugadorid == id);
 
             if (jugadorBuscado == null)
             {
@@ -71,21 +68,20 @@ namespace ejemplolab1.Controllers
         // POST: Jugador/Edit/5
         [HttpPost]
     [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Jugadorid,Nombre,Apellido,Salario,Posicion,Club")]Jugador jugador)
+        public ActionResult Edit([Bind(Include="jugadorid,nombre,apellido,salario,posiscion")]Jugador jugador)
         {
             try
             {
                 // TODO: Add update logic here
-                Jugador jugadorbuscado = db.Jugadores.Find(x => x.Jugadorid == jugador.Jugadorid);
+                Jugador jugadorbuscado = db.Jugadores.Find(x => x.jugadorid == jugador.jugadorid);
                 if (jugadorbuscado == null)
                 {
                     return HttpNotFound();
                 }
-                jugadorbuscado.Nombre = jugador.Nombre;
-                jugadorbuscado.Apellido = jugador.Apellido;
-                jugadorbuscado.Salario = jugador.Salario;
-                jugadorbuscado.Posicion = jugador.Posicion;
-                jugadorbuscado.Club = jugador.Club;
+                jugadorbuscado.nombre = jugador.nombre;
+                jugadorbuscado.apellido = jugador.apellido;
+                jugadorbuscado.salario = jugador.salario;
+                jugadorbuscado.posiscion = jugador.posiscion;
                 return RedirectToAction("Index");
             }
             catch
@@ -95,20 +91,9 @@ namespace ejemplolab1.Controllers
         }
 
         // GET: Jugador/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Jugador jugadorBuscado = db.Jugadores.Find(x => x.Jugadorid == id);
-
-            if (jugadorBuscado == null)
-            {
-
-                return HttpNotFound();
-            }
-            return View(jugadorBuscado);
+            return View();
         }
 
         // POST: Jugador/Delete/5
@@ -118,7 +103,6 @@ namespace ejemplolab1.Controllers
             try
             {
                 // TODO: Add delete logic here
-                db.Jugadores.Remove(db.Jugadores.First(x => x.Jugadorid == id));
 
                 return RedirectToAction("Index");
             }

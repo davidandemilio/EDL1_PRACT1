@@ -7,49 +7,43 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Crear Jugador", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
-
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Nombre)
+            @Html.DisplayNameFor(model => model.nombre)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Apellido)
+            @Html.DisplayNameFor(model => model.apellido)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Salario)
+            @Html.DisplayNameFor(model => model.salario)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Posicion)
+            @Html.DisplayNameFor(model => model.posiscion)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Club)
-        </th>
+        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Nombre)
+            @Html.DisplayFor(modelItem => item.nombre)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Apellido)
+            @Html.DisplayFor(modelItem => item.apellido)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Salario)
+            @Html.DisplayFor(modelItem => item.salario)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Posicion)
+            @Html.DisplayFor(modelItem => item.posiscion)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Club)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Jugadorid }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Jugadorid }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Jugadorid })
+            @Html.ActionLink("Edit", "Edit", new { id=item.jugadorid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.jugadorid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.jugadorid })
         </td>
     </tr>
 }
